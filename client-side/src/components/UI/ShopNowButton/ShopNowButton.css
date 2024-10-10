@@ -1,0 +1,22 @@
+.shop-button {
+    display: inline-block;
+    align-content: center;
+    border: 1px solid black;
+    border-radius: 0.5rem;
+    width: 100%;
+    height: 45px;
+    text-align: center;
+    background: white;
+    font-weight: 600;
+    font-size: 1rem;
+    margin-block: 1.5rem;
+    cursor: pointer;
+    color: black;
+    transition: .3s ease-in;
+}
+
+.shop-button:active,
+.shop-button:hover {
+    color: white;
+    background: black;
+}

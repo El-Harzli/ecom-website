@@ -1,0 +1,14 @@
+.section-with-swiper{
+    width: 95%;
+    margin-inline: auto;
+}
+
+
+.section-with-swiper__title{
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: #2B2B2B;
+    margin-block: 1rem 0.8rem;
+    text-align: left;
+    line-height: 1.25;
+}

@@ -1,0 +1,77 @@
+.product-add-to-wishlist {
+    border: none;
+    background: transparent;
+    position: absolute;
+    top: 2.5%;
+    right: 5%;
+    height: 1.5rem;
+    width: 1.5rem;
+    cursor: pointer;
+    display: inline-block;
+  }
+  
+  .product-add-to-wishlist i {
+    position: absolute;
+    inset: 0;
+    font-size: 1.5rem;
+    transition: opacity 0.3s ease;
+    cursor: pointer;
+  }
+  
+  /* When the product is NOT on the wishlist (empty heart visible) */
+  .product-add-to-wishlist .bx-heart.active {
+    opacity: 1;
+  }
+  
+  .product-add-to-wishlist .bxs-heart.inactive {
+    opacity: 0;
+  }
+  
+  /* When the product IS on the wishlist (filled heart visible) */
+  .product-add-to-wishlist .bx-heart.inactive {
+    opacity: 0;
+  }
+  
+  .product-add-to-wishlist .bxs-heart.active {
+    opacity: 1;
+  }
+  
+  /* Hover Effect: Temporary icon swap on hover */
+  
+  /* .product-add-to-wishlist:hover .bx-heart.active {
+    opacity: 0;
+  }
+  
+  .product-add-to-wishlist:hover .bxs-heart.inactive {
+    opacity: 1;
+  }
+  
+  .product-add-to-wishlist:hover .bx-heart.inactive {
+    opacity: 1;
+  }
+  
+  .product-add-to-wishlist:hover .bxs-heart.active {
+    opacity: 0;
+  } */
+
+  
+
+  /* Hover effect for desktop only (min-width: 768px) */
+@media (min-width: 768px) {
+  /* Temporary hover effect (desktop only) */
+  .product-add-to-wishlist:hover .bx-heart.active {
+    opacity: 0;
+  }
+  
+  .product-add-to-wishlist:hover .bxs-heart.inactive {
+    opacity: 1;
+  }
+
+  .product-add-to-wishlist:hover .bx-heart.inactive {
+    opacity: 1;
+  }
+
+  .product-add-to-wishlist:hover .bxs-heart.active {
+    opacity: 0;
+  }
+}
