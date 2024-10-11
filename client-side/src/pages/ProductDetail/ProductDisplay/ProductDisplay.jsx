@@ -65,8 +65,7 @@ function ProductDisplay({product}) {
               // small tablets
               slidesPerView: 2,
             },
-          }}
-          >
+          }}>
           {
             imageEntries.map(([key, image]) => (
             <SwiperSlide key={key} >
@@ -90,10 +89,12 @@ function ProductDisplay({product}) {
           <WishlistIcon product={product} type={'detail'}/>
 
           <div>
-            <div onClick={() => setIsOpen(true)} className="select-size">{selectedSize === null ? 'Select Size' : `Selected Size : ${selectedSize}`} <span><i className='bx bx-chevron-down'></i></span></div>
-            <button className="add-to-bag"> 
-              Add To Bag
-            </button>
+            <div onClick={() => setIsOpen(true)} className="select-size">
+              {selectedSize === null ? 'Select Size' : `Selected Size : ${selectedSize}`}
+               <span><i className='bx bx-chevron-down'></i></span>
+            </div>
+
+            <button className="add-to-bag">Add To Bag</button>
 
             <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, maiores.</div>
           </div>
@@ -106,6 +107,3 @@ function ProductDisplay({product}) {
 }
 
 export default ProductDisplay
-
-
-

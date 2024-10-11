@@ -3,7 +3,7 @@
     overflow-y: auto;
 }
 
-.add-to-bag{
+.makeMeDraged .add-to-bag{
     width: 100%;
     background: black;
     color: white;
@@ -18,7 +18,7 @@
     transition: .3s ease;
 }
 
-.add-to-bag:hover{
+.makeMeDraged .add-to-bag:hover{
     background: white;
     color: black;
 }

@@ -2,11 +2,10 @@ import React, { useState, useEffect, useRef, useContext } from 'react'
 import './WishlistIcon.css'
 
 import useToast from '@src/hooks/useToast';
-import { Context } from '../../../App';
-
+import { WishlistContext } from '../../../hooks/WishlistContext';
 
 function WishlistIcon({product, type}) {
-  const {wishlistItems, wishlistCounter, addToWishlist, removeFromWishlist} = useContext(Context);
+  const {wishlistItems, wishlistCounter, addToWishlist, removeFromWishlist} = useContext(WishlistContext);
 
   // This will not work when the type = nav because in the MainNavbar.jsx we are not passing product, because it does not require it
   // So in order to not throw an error, we need to check if product does exist, if it does we do our check, else it's simply false
@@ -64,6 +63,10 @@ function WishlistIcon({product, type}) {
           <i className="bx bx-heart"></i>
           {wishlistCounter > 0 && <span className="counter">{wishlistCounter}</span>}
         </span>
+        )
+        case 'close' : 
+        return (
+          <i onClick={() => removeFromWishlist(product.id)} className='bx bx-x'></i>
         )
 
       default:

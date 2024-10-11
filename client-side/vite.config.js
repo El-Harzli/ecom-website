@@ -14,7 +14,8 @@ export default defineConfig({
       '@src' : '/src',
       '@components' : '/src/components',
       '@UI' : '/src/components/UI',
-      '@Utils' : '/src/components/Utils'
+      '@Utils' : '/src/components/Utils',
+      '@hooks' : '/src/hooks'
     },
   },
 });
